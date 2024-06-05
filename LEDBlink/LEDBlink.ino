@@ -1,7 +1,7 @@
 #define boardLED 13
 #include "Led.h"
 
-static unsigned int time = 7;
+static unsigned int time = 10;
 static unsigned int time2 = 1000 - time;
 
 Led led(boardLED); // <class> <object>([parameters/data])
