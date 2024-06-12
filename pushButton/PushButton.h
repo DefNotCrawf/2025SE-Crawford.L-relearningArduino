@@ -10,12 +10,16 @@ private:
 
   bool isPullUp;
   bool internalPullUpActivated;
+
+  void readState();
+
 public:
   PushButton() {}
   PushButton(byte pin, bool isPullUp, bool internalPullUpActivated);
 
   void init();
-  byte readState();
+
+  bool isPressed();
 };
 
 #endif

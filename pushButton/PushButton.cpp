@@ -17,7 +17,16 @@ void PushButton::init() {
   }
   readState();
 }
-byte PushButton::readState() {
+
+void PushButton::readState() {
   state = digitalRead(pin);
-  return state;
+}
+
+bool PushButton::isPressed() {
+  readState();
+  if (isPullUp) {
+    return (state == LOW);
+  } else {
+    return (state == HIGH);
+  }
 }
