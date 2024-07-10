@@ -1,5 +1,5 @@
-#ifndef PUSH_BUTTON_H
-#define PUSH_BUTTON_H
+#ifndef PushButton_H
+#define PushButton_H
 
 #include <Arduino.h>
 
