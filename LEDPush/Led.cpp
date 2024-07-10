@@ -1,7 +1,7 @@
 #include "Led.h"
 
 Led::Led(byte pin){
-   this->pin = pin;
+  this->pin = pin;
 }
 
 // methods

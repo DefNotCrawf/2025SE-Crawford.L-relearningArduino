@@ -3,11 +3,14 @@
 
 #include <Arduino.h>
 
-class Led{
+class Led
+{
 private: // setting private data
   byte pin;
-public: // setting public data (so that it is accessible outside of the class)
-  Led() {} // do not use
+  byte state;
+
+public:    // setting public data (so that it is accessible outside of the class)
+  Led() {} // do not use (default constructor (needed))
   Led(byte pin);
 
   // methods
@@ -16,6 +19,11 @@ public: // setting public data (so that it is accessible outside of the class)
 
   void on();
   void off();
+
+  // power on/off
+  void toggle();
+
+  bool isPoweredOn();
 };
 
 #endif
